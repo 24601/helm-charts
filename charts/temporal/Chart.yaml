@@ -18,12 +18,6 @@ maintainers:
 sources:
   - https://github.com/temporalio/temporal
 
-dependencies:
-  - name: elasticsearch
-    repository: https://helm.elastic.co
-    version: 7.16.1
-    condition: elasticsearch.enabled
-
 # A chart can be either an 'application' or a 'library' chart.
 #
 # Application charts are a collection of templates that can be packaged into versioned archives
@@ -36,7 +30,7 @@ type: application
 
 # This is the chart version. This version number should be incremented each time you make changes
 # to the chart and its templates, including the app version.
-version: 0.14.3
+version: 0.14.4
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application.
