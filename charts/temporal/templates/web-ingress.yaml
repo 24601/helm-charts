@@ -1,8 +1,8 @@
 {{- if .Values.web.ingress.enabled -}}
   {{- if .Capabilities.APIVersions.Has "networking.k8s.io/v1beta1" }}
-apiVersion: networking.k8s.io/v1beta1
+apiVersion: networking.k8s.io/v1
   {{- else if .Capabilities.APIVersions.Has "extensions/v1beta1" }}
-apiVersion: extensions/v1beta1
+apiVersion: extensions/v1
   {{- end }}
 kind: Ingress
 metadata:
