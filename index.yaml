@@ -3,6 +3,33 @@ entries:
   temporal:
   - apiVersion: v2
     appVersion: 1.14.1
+    created: "2022-01-06T02:41:27.4346384Z"
+    dependencies:
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.16.1
+    description: Temporal is a distributed, scalable, durable, and highly available
+      orchestration engine to execute asynchronous long-running business logic in
+      a scalable and resilient way.
+    digest: df7a4e2cb7530232bfba76a3291b49429ea1783aad2b11c6b4333c39f929f5cb
+    home: https://temporal.io/
+    keywords:
+    - temporal
+    - workflow
+    - orchestration
+    maintainers:
+    - name: Temporal Technologies Inc.
+      url: https://temporal.io/
+    name: temporal
+    sources:
+    - https://github.com/temporalio/temporal
+    type: application
+    urls:
+    - https://github.com/24601/helm-charts/releases/download/temporal-0.14.3/temporal-0.14.3.tgz
+    version: 0.14.3
+  - apiVersion: v2
+    appVersion: 1.14.1
     created: "2022-01-06T02:29:53.620908745Z"
     dependencies:
     - condition: cassandra.enabled
@@ -196,4 +223,4 @@ entries:
     urls:
     - https://github.com/24601/helm-charts/releases/download/temporal-0.13.3/temporal-0.13.3.tgz
     version: 0.13.3
-generated: "2022-01-06T02:29:53.620933546Z"
+generated: "2022-01-06T02:41:27.4346632Z"
