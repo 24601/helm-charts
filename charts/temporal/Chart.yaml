@@ -19,23 +19,10 @@ sources:
   - https://github.com/temporalio/temporal
 
 dependencies:
-  - name: cassandra
-    version: "0.14.3"
-    repository: https://charts.helm.sh/incubator
-    enabled: false
-    condition: cassandra.enabled
-  - name: prometheus
-    repository: https://prometheus-community.github.io/helm-charts
-    version: 11.0.4
-    condition: prometheus.enabled
   - name: elasticsearch
     repository: https://helm.elastic.co
     version: 7.16.1
     condition: elasticsearch.enabled
-  - name: grafana
-    repository: https://grafana.github.io/helm-charts
-    version: 5.0.10
-    condition: grafana.enabled
 
 # A chart can be either an 'application' or a 'library' chart.
 #
@@ -49,7 +36,7 @@ type: application
 
 # This is the chart version. This version number should be incremented each time you make changes
 # to the chart and its templates, including the app version.
-version: 0.14.2
+version: 0.14.3
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application.
