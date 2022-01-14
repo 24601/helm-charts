@@ -3,6 +3,28 @@ entries:
   temporal:
   - apiVersion: v2
     appVersion: 1.14.2
+    created: "2022-01-14T03:20:38.401947187Z"
+    description: Temporal is a distributed, scalable, durable, and highly available
+      orchestration engine to execute asynchronous long-running business logic in
+      a scalable and resilient way.
+    digest: d78241219e5594237de4cf9f1e9b2f2ab01f5b3377fc6e6ce243968c8bf167ea
+    home: https://temporal.io/
+    keywords:
+    - temporal
+    - workflow
+    - orchestration
+    maintainers:
+    - name: Temporal Technologies Inc.
+      url: https://temporal.io/
+    name: temporal
+    sources:
+    - https://github.com/temporalio/temporal
+    type: application
+    urls:
+    - https://github.com/24601/helm-charts/releases/download/temporal-0.14.6/temporal-0.14.6.tgz
+    version: 0.14.6
+  - apiVersion: v2
+    appVersion: 1.14.2
     created: "2022-01-14T03:15:23.827631132Z"
     description: Temporal is a distributed, scalable, durable, and highly available
       orchestration engine to execute asynchronous long-running business logic in
@@ -267,4 +289,4 @@ entries:
     urls:
     - https://github.com/24601/helm-charts/releases/download/temporal-0.13.3/temporal-0.13.3.tgz
     version: 0.13.3
-generated: "2022-01-14T03:15:23.827822647Z"
+generated: "2022-01-14T03:20:38.402005288Z"
