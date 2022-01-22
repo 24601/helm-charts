@@ -1,8 +1,8 @@
 {{- if .Values.web.ingress.enabled -}}
   {{- if .Capabilities.APIVersions.Has "networking.k8s.io/v1beta1" }}
-apiVersion: networking.k8s.io/v1
+apiVersion: networking.k8s.io/v1beta1
   {{- else if .Capabilities.APIVersions.Has "extensions/v1beta1" }}
-apiVersion: extensions/v1
+apiVersion: extensions/v1beta1
   {{- end }}
 kind: Ingress
 metadata:
@@ -25,7 +25,7 @@ spec:
     {{- range .Values.web.ingress.tls }}
     - hosts:
       {{- range .hosts }}
-      - {{ . }}
+      - {{ . | quote }}
       {{- end }}
       secretName: {{ .secretName }}
       {{- end }}
